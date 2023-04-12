@@ -93,7 +93,6 @@ class Surge
             "{$server['port']}",
             "encrypt-method={$server['cipher']}",
             "password={$password}",
-            'tfo=true',
             'udp-relay=true'
         ];
         $config = array_filter($config);
@@ -110,7 +109,6 @@ class Surge
             "{$server['port']}",
             "username={$uuid}",
             "vmess-aead=true",
-            'tfo=true',
             'udp-relay=true'
         ];
 
@@ -148,7 +146,6 @@ class Surge
             "{$server['port']}",
             "password={$password}",
             $server['server_name'] ? "sni={$server['server_name']}" : "",
-            'tfo=true',
             'udp-relay=true'
         ];
         if (!empty($server['allow_insecure'])) {
