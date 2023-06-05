@@ -41,7 +41,6 @@ class QuantumultX
             "shadowsocks={$server['host']}:{$server['port']}",
             "method={$server['cipher']}",
             "password={$password}",
-            'fast-open=true',
             'udp-relay=true',
             "tag={$server['name']}"
         ];
@@ -57,7 +56,6 @@ class QuantumultX
             "vmess={$server['host']}:{$server['port']}",
             'method=chacha20-poly1305',
             "password={$uuid}",
-            'fast-open=true',
             'udp-relay=true',
             "tag={$server['name']}"
         ];
@@ -104,7 +102,6 @@ class QuantumultX
             $server['server_name'] ? "tls-host={$server['server_name']}" : "",
             // Tips: allowInsecure=false = tls-verification=true
             $server['allow_insecure'] ? 'tls-verification=false' : 'tls-verification=true',
-            'fast-open=true',
             'udp-relay=true',
             "tag={$server['name']}"
         ];

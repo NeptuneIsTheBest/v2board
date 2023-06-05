@@ -68,7 +68,7 @@ class Shadowrocket
     {
         $userinfo = base64_encode('auto:' . $uuid . '@' . $server['host'] . ':' . $server['port']);
         $config = [
-            'tfo' => 1,
+            'udp' => 1,
             'remark' => $server['name'],
             'alterId' => 0
         ];
