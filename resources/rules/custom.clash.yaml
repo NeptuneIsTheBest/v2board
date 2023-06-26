@@ -11,12 +11,6 @@ dns:
     - +.stun.*.*.*
     - +.stun.*.*.*.*
     - +.stun.*.*.*.*.*
-  fallback:
-    - 'https://dns.google/dns-query'
-    - 'https://cloudflare-dns.com/dns-query'
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
 proxies: null
 proxy-groups:
   - name: $app_name
