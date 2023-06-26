@@ -4,7 +4,7 @@ dns:
   default-nameserver:
     - 119.29.29.29
   nameserver:
-    - 119.29.29.29
+    - tls://dot.pub
   use-hosts: true
   fake-ip-filter:
     - +.stun.*.*
@@ -12,9 +12,8 @@ dns:
     - +.stun.*.*.*.*
     - +.stun.*.*.*.*.*
   fallback:
-    - 'tls://dns.google'
-    - 'tls://1.1.1.1'
-    - 'tls://1.0.0.1'
+    - 'https://dns.google/dns-query'
+    - 'https://cloudflare-dns.com/dns-query'
   fallback-filter:
     geoip: true
     geoip-code: CN
