@@ -5,6 +5,7 @@ dns:
     - 119.29.29.29
   nameserver:
     - tls://dot.pub
+    - tls://dns.alidns.com
   use-hosts: true
   fake-ip-filter:
     - +.stun.*.*
